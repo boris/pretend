@@ -3,6 +3,8 @@
 **pretend** is a Go library for documenting operational workflows as interactive, human-in-the-loop scripts.  
 It lets you describe your manual procedures as step-by-step “pretend” scripts, pausing at each step for confirmation, without making any real changes to your systems.
 
+_"Good documentation is almost runnable"_
+
 ## Features
 
 - Write interactive “do-nothing” scripts in Go
