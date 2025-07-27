@@ -8,3 +8,7 @@ build:
 clean:
 	@echo "Cleaning up..."
 	rm -f pretend
+
+act:
+	@echo "Running act..."
+	act -W .github/workflows/go.yml
