@@ -41,6 +41,9 @@ jobs:
       with:
         name: pretend-binaries
 
+    - name: list files
+      run: ls -l
+
     - name: Create Github Release and updaload assets
       uses: softprops/action-gh-release@v2
       with:
