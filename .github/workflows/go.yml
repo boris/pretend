@@ -35,4 +35,4 @@ jobs:
           pretend-darwin-amd64
           pretend-darwin-arm64
       env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{secrets.GHACTIONS_TOKEN}}
