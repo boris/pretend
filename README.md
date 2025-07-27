@@ -21,28 +21,26 @@ go get github.com/boris/pretend
 
 Also requires `fatih/color` (automatically installed by go get).
 
+Or, you can get the binary directly from the [releases page](https://github.com/boris/pretend/releases).
+
 ## Usage
-```go
-package main
-
-import "github.com/yourusername/pretend"
-
-func main() {
-    script := pretend.NewScript("Deploy Web App")
-
-    script.Step("Clone repository", "git clone https://example.com/repo.git")
-    script.Step("Change directory", "cd repo")
-
-    script.Group("Install dependencies", func() {
-        script.Step("Install Node.js dependencies", "npm install")
-        script.Step("Install Python dependencies", "pip install -r requirements.txt")
-    })
-
-    script.Run()
+```json
+{
+  "name": "Deploy Web App",
+  "steps": [
+    { "desc": "Clone repository", "cmd": "git clone https://example.com/repo.git" },
+    {
+      "desc": "Install dependencies",
+      "steps": [
+        { "desc": "Python", "cmd": "pip install -r requirements.txt" }
+      ]
+    }
+  ]
 }
+
 ```
 
-See [main.go](./main.go) for a complete example.
+See [example_steps.json](./example_steps.json) for a complete example.
 
 ## Why?
 
