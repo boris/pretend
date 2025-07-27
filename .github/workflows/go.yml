@@ -47,7 +47,7 @@ jobs:
     - name: Create Github Release and updaload assets
       uses: softprops/action-gh-release@v2
       with:
-        files:
+        files: |
           pretend-linux-amd64
           pretend-darwin-amd64
           pretend-darwin-arm64
