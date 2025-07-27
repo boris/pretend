@@ -2,7 +2,7 @@ PHONY: build clean
 
 build:
 	@echo "Building the project..."
-	go build -o pretend 
+	go build -v -o pretend 
 	@sha256sum pretend
 
 clean:
