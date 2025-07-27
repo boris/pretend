@@ -3,6 +3,8 @@ name: Go build and release
 on:
   push:
     branches: [ "main" ]
+  tags:
+    - '*.*.*'
 
 jobs:
 
