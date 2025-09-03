@@ -1,0 +1,21 @@
+{
+  "name": "Get Pretend",
+  "steps": [
+    { "desc": "Clone repository", "cmd": "git clone git@github.com:boris/pretend.git" },
+    { "desc": "Change directory", "cmd": "cd pretend" },
+    {
+      "desc": "Install dependencies",
+      "steps": [
+        { "desc": "Initialize Go modules", "cmd": "go mod init pretend" },
+        { "desc": "Download dependencies", "cmd": "go mod tidy" }
+      ]
+    },
+    {
+      "desc": "Build the code and run",
+      "steps": [
+        { "desc": "Build the binary", "cmd": "go build -o pretend main.go" },
+        { "desc": "Run it", "cmd": "./pretend -help" }
+      ]
+    }
+  ]
+}

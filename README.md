@@ -24,6 +24,7 @@ Also requires `fatih/color` (automatically installed by go get).
 Or, you can get the binary directly from the [releases page](https://github.com/boris/pretend/releases).
 
 ## Usage
+Describe your steps in JSON, then run `pretend -help` for options.
 ```json
 {
   "name": "Deploy Web App",
@@ -40,7 +41,7 @@ Or, you can get the binary directly from the [releases page](https://github.com/
 
 ```
 
-See [example_steps.json](./example_steps.json) for a complete example.
+See [example](./example) directory for a complete example.
 
 ## Why?
 

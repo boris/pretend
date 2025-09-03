@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	stepsFile := flag.String("steps", "steps.json", "Path to the steps file")
+	stepsFile := flag.String("steps", "steps.json", "Path to the steps file. In green you'll see commands to copy/paste.")
 	flag.Parse()
 
 	script, err := pretend.ScriptFromFile(*stepsFile)
