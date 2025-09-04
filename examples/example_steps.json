@@ -12,8 +12,8 @@
     },
     { "desc": "Restart service", 
       "steps": [
-        { "desc": "Restart","cmd": "systemctl restart app" },
-        { "desc": "Check status","cmd": "systemctl status app" }
+        { "desc": "Restart", "cmd": "systemctl restart app" },
+        { "desc": "Check status", "cmd": "systemctl status app" }
       ]
     }
   ]
