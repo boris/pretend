@@ -41,7 +41,7 @@ Describe your steps in JSON, then run `pretend -help` for options.
 
 ```
 
-See [example](./example) directory for a complete example.
+See [examples](./examples) directory for a complete example.
 
 ## Why?
 
