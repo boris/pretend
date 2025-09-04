@@ -10,7 +10,12 @@
         { "desc": "Python", "cmd": "pip install -r requirements.txt" }
       ]
     },
-    { "desc": "Restart service", "cmd": "systemctl restart app" }
+    { "desc": "Restart service", 
+      "steps": [
+        { "desc": "Restart","cmd": "systemctl restart app" },
+        { "desc": "Check status","cmd": "systemctl status app" }
+      ]
+    }
   ]
 }
 

@@ -14,7 +14,7 @@
       "desc": "Build the code and run",
       "steps": [
         { "desc": "Build the binary", "cmd": "go build -o pretend-example main.go" },
-        { "desc": "Run it", "cmd": "./pretend -help" }
+        { "desc": "Run it", "cmd": "./pretend-example -help" }
       ]
     }
   ]
